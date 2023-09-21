@@ -1,0 +1,41 @@
+[
+    {
+        "id": "9251089",
+        "name": "Стоматология на 22 Этаже",
+        "url": "https://api.hh.ru/employers/9251089",
+        "alternate_url": "https://hh.ru/employer/9251089",
+        "logo_urls": {
+            "original": "https://hhcdn.ru/employer-logo-original/1015588.jpeg",
+            "240": "https://hhcdn.ru/employer-logo/5683121.jpeg",
+            "90": "https://hhcdn.ru/employer-logo/5683120.jpeg"
+        },
+        "vacancies_url": "https://api.hh.ru/vacancies?employer_id=9251089",
+        "open_vacancies": 6
+    },
+    {
+        "id": "9247770",
+        "name": "Этажи Девелопмент",
+        "url": "https://api.hh.ru/employers/9247770",
+        "alternate_url": "https://hh.ru/employer/9247770",
+        "logo_urls": {
+            "original": "https://hhcdn.ru/employer-logo-original/1053926.jpg",
+            "240": "https://hhcdn.ru/employer-logo/5836346.jpeg",
+            "90": "https://hhcdn.ru/employer-logo/5836345.jpeg"
+        },
+        "vacancies_url": "https://api.hh.ru/vacancies?employer_id=9247770",
+        "open_vacancies": 5
+    },
+    {
+        "id": "5932313",
+        "name": "Этажи Москва",
+        "url": "https://api.hh.ru/employers/5932313",
+        "alternate_url": "https://hh.ru/employer/5932313",
+        "logo_urls": {
+            "original": "https://hhcdn.ru/employer-logo-original/984955.png",
+            "240": "https://hhcdn.ru/employer-logo/5560641.png",
+            "90": "https://hhcdn.ru/employer-logo/5560640.png"
+        },
+        "vacancies_url": "https://api.hh.ru/vacancies?employer_id=5932313",
+        "open_vacancies": 81
+    }
+]
