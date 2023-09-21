@@ -1,5 +1,5 @@
 from src.database_manager import DBManager
-from src.hh_api import HeadHunterAPI, Vacancy
+from src.hh_api import HeadHunter, Vacancy
 
 params = {
     'host': 'localhost',
@@ -12,7 +12,7 @@ def iterator(database: DBManager):
     value = 1
     while value <= 10:
         customer_name = input('Введите название компании: ')
-        hh = HeadHunterAPI(customer_name)
+        hh = HeadHunter(customer_name)
         data = hh.get_company
         for i in range(len(data)):
             id_emp = data[i]["id"]
