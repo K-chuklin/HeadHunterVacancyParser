@@ -75,8 +75,9 @@ class Vacancy:
                     'name'],
                 'salary_from': salary_from,
                 'salary_to': salary_to,
-                'salary_avg': (salary_from if salary_to == 0 else (salary_from + salary_to) / 2) or (
-                    salary_to if salary_from == 0 else (salary_to + salary_to) / 2),
+                'salary_avg': 0,
+                # (salary_from if salary_to == 0 else (salary_from + salary_to) / 2) or (
+                # salary_to if salary_from == 0 else (salary_to + salary_to) / 2),
                 'experience': vacancies[data]['experience'].get('name'),
                 'url': vacancies[data].get('alternate_url'),
                 "requirement": "Не указано" if vacancies[data]['snippet']['requirement'] else
