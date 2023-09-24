@@ -80,7 +80,8 @@ class DBManager:
                          vacancy['experience'], vacancy['requirement'], vacancy['url']))
 
     def get_companies_and_vacancies_count(self):
-        """Получает список всех компаний и количество вакансий у каждой компании."""
+        """Получает список всех компаний
+        и ко-лво вакансий у каждой компании."""
         with psycopg2.connect(dbname=self.database_name, **self.params) as db_connection:
             list_companies_and_vacancies_count = []
             with db_connection.cursor() as db_cursor:
@@ -91,8 +92,9 @@ class DBManager:
                 return list_companies_and_vacancies_count
 
     def get_all_vacancies(self):
-        """Получает список всех вакансий с указанием названия компании, названия вакансии
-        и зарплаты, и ссылки, на вакансию."""
+        """Получает список всех вакансий с
+        указанием названия компании,
+        названия вакансии, зарплаты, и ссылки, на вакансию."""
         with psycopg2.connect(dbname=self.database_name, **self.params) as db_connection:
             list_all_vacancies = []
             with db_connection.cursor() as db_cursor:
@@ -110,7 +112,9 @@ class DBManager:
                 return db_cursor.fetchall()
 
     def get_vacancies_with_higher_salary(self):
-        """Получает список всех вакансий, у которых зарплата выше средней по всем вакансиям."""
+        """Получает список всех вакансий,
+         у которых зарплата выше средней
+         по всем вакансиям."""
         with psycopg2.connect(dbname=self.database_name, **self.params) as db_connection:
             list_with_higher_salary_vacancies = []
             with db_connection.cursor() as db_cursor:
@@ -124,7 +128,9 @@ class DBManager:
                 return list_with_higher_salary_vacancies
 
     def get_vacancies_with_keyword(self, word: str):
-        """Получает список всех вакансий, в названии которых содержатся переданные в метод слова, например “python”."""
+        """Получает список всех вакансий,
+        в названии которых содержатся переданные
+        в метод слова, например “python”."""
         with psycopg2.connect(dbname=self.database_name, **self.params) as db_connection:
             list_with_keyword_vacancies = []
             with db_connection.cursor() as db_cursor:

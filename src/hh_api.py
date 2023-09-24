@@ -63,7 +63,7 @@ class Vacancy:
                                 vacancies[data]['salary']['from'] is None) else vacancies[data]['salary']['from'],
             salary_to = 0 if (vacancies[data]['salary'] is None or vacancies[data]['salary']['to'] == 0 or
                               vacancies[data]['salary']['to'] is None) else vacancies[data]['salary']['to']
-            salary_avg = 0
+
             vacancy_data = {
                 'id_vacancy': vacancies[data].get('id'),
                 'name_vacancy': vacancies[data].get('name'),
@@ -75,12 +75,12 @@ class Vacancy:
                     'name'],
                 'salary_from': salary_from,
                 'salary_to': salary_to,
-                'salary_avg': salary_avg,
+                'salary_avg': (salary_from if salary_to == 0 else (salary_from + salary_to) / 2) or (
+                    salary_to if salary_from == 0 else (salary_to + salary_to) / 2),
                 'experience': vacancies[data]['experience'].get('name'),
                 'url': vacancies[data].get('alternate_url'),
                 "requirement": "Не указано" if vacancies[data]['snippet']['requirement'] else
                 vacancies[data]['snippet']['requirement'],
             }
-
             vacancies_list.append(vacancy_data)
         return vacancies_list

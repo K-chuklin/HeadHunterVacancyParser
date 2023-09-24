@@ -10,7 +10,7 @@ params = {
 
 def iterator(database: DBManager):
     value = 1
-    while value <= 10:
+    while value <= 1:
         customer_name = input('Введите название компании: ')
         hh = HeadHunter(customer_name)
         data = hh.get_company
