@@ -1,4 +1,4 @@
-# headhunter_vacancy_parser
+# HeadHunterVacancyParser
 # Описание программы
 - Парсер вакансий с сайта hh.ru
 
